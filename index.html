@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ForBetterCommunity — Coming soon</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="ForBetterCommunity website is being rebuilt. Coming soon.">
+  <style>
+    :root {
+      --bg: #0f1115;
+      --fg: #e6e8ee;
+      --muted: #9aa0aa;
+      --accent: #c8a951;
+      --link: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      height: 100%;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    main {
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+    .brand {
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      font-weight: 300;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+      color: var(--fg);
+    }
+    .brand strong {
+      font-weight: 600;
+      color: var(--accent);
+    }
+    .tagline {
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      color: var(--muted);
+      max-width: 36rem;
+      margin: 1rem auto 2rem;
+      line-height: 1.5;
+    }
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1.25rem;
+      border: 1px solid rgba(200, 169, 81, 0.3);
+      border-radius: 999px;
+      font-size: 0.9rem;
+      color: var(--accent);
+      margin-bottom: 2.5rem;
+    }
+    .status::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 8px var(--accent);
+      animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+    .contact {
+      margin-top: 1.5rem;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+    .contact a {
+      color: var(--link);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      transition: border-color 0.2s ease;
+    }
+    .contact a:hover {
+      border-color: var(--accent);
+    }
+    footer {
+      position: fixed;
+      bottom: 1.5rem;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 0.8rem;
+      color: rgba(154, 160, 170, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="status">Site under construction</div>
+    <h1 class="brand">For<strong>Better</strong>Community</h1>
+    <p class="tagline">
+      We're rebuilding our website to better serve our mission.
+      Stay tuned — we'll be back online soon.
+    </p>
+    <p class="contact">
+      Need to reach us in the meantime?<br>
+      <a href="mailto:contact@forbettercommunity.org">contact@forbettercommunity.org</a>
+    </p>
+  </main>
+  <footer>
+    &copy; ForBetterCommunity — All rights reserved
+  </footer>
+</body>
+</html>
